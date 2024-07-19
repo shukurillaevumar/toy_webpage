@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navbar CSS */
+.main-head {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  padding-left: 0px;
+}
+
+ul .left-side-nav {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(99, 94, 94);
+}
+
+ul .right-side-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.right-side-nav button {
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.right-side-nav .log-in {
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  border: transparent;
+}
+
+.right-side-nav .sign-up {
+  background-color: #7f56d9;
+  border: transparent;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+/* main-body CSS */
+
+.main-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-img {
+  width: 95vh;
+}
+
+.left-side-p {
+  color: grey;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+
+.left-btn-shop {
+  padding: 20px;
+  background-color: #ff1276;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Inter", sans-serif;
+  border-radius: 12px;
+  border: 1px solid #ff1276;
+  cursor: pointer;
+}
+
+.left-side-main-body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* search-container CSS */
+.search-container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 52px;
+  font-family: "Nunito", sans-serif;
+  background-color: #ff1276;
+  filter: drop-shadow(5px 7px 23px #ff1276);
+  border: 1px solid #ff1276;
+}
+
+.search-container .fi-br-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7vh;
+  height: 7vh;
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: #fbe628;
+}
+
+.search-container p {
+  font-size: 32px;
+  color: white;
+}
+
+.search-container input {
+  width: 33vh;
+  height: 4vh;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 22px;
+  border-radius: 29px;
+}
+
+/* shop-category CSS */
+
+.shop-container {
+  margin-top: 70px;
+}
+
+.shop-category {
+  text-align: center;
+}
+
+.shop-category-title {
+  color: #ff1276;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shop-category-p-big {
+  color: #101828;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.shop-category-p-small {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: #667085;
+}
+
+/* item-container CSS */
+
+.item-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.vector-img {
+  position: relative;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-img {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 60px;
+}
+
+.item-title {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 40px;
+  border-radius: 52px;
+  color: white;
+}
+
+.item-title-1 {
+  background-color: #46d913;
+}
+
+.item-title-2 {
+  background-color: #e21213;
+}
+
+.item-title-3 {
+  background-color: #00afed;
+}
+
+.item-title-4 {
+  background-color: #ff1276;
+}
+
+.item-title-5 {
+  background-color: #35c5be;
+}
+
+/* Slideshow CSS */
+
+.dots-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #ff1276;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.buttons a {
+  cursor: pointer;
+}
