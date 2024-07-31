@@ -519,3 +519,75 @@ ul .right-side-nav {
   font-family: "Nunito", sans-serif;
   line-height: 12px;
 }
+
+/* gallery-container CSS */
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin: 2.5rem 0rem;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* footer CSS */
+
+footer {
+  background-image: url("footer-back/image\ 24.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.desc-div {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+footer img {
+  margin-bottom: 150px;
+}
+
+.section-title {
+  color: #98a2b3;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.desc-div div div p {
+  color: #667085;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.new-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0px;
+  gap: 20px;
+}
+
+.new-section button {
+  color: #027a48;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background-color: #027a4831;
+  border: transparent;
+  border-radius: 12px;
+}
