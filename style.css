@@ -688,15 +688,132 @@ footer img {
 }
 
 /* Media querry for shop-container */
+@media screen and (max-width: 430px) {
+  .shop-category-title {
+    font-size: 20px;
+  }
 
-.shop-category-title {
-  font-size: 20px;
+  .shop-category-p-big {
+    font-size: 27px;
+  }
+
+  .shop-category-p-small {
+    font-size: 17px;
+  }
+
+  .item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
-.shop-category-p-big {
-  font-size: 27px;
+/* Media querry for container-img-trending-products */
+
+@media screen and (max-width: 430px) {
+  .container-img-trending-products {
+    margin-top: 100px;
+  }
+
+  .top-menu-trending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .text-trending-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-desc-trending {
+    line-height: normal;
+    text-align: center;
+    padding: 0px 20px;
+  }
 }
 
-.shop-category-p-small {
-  font-size: 17px;
+/* Media querry for cards-container */
+
+@media screen and (max-width: 430px) {
+  .separator-card {
+    gap: 20px;
+  }
+
+  .card {
+    width: 11rem;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card-desc {
+    line-height: normal;
+  }
+}
+
+/* Media querry for offer-container */
+
+@media screen and (max-width: 430px) {
+  .offer-container {
+    margin-top: 35rem;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .offer-div {
+    flex-direction: column;
+  }
+
+  .offer-div .right {
+    align-items: center;
+  }
+
+  .offer-div .left img {
+    width: 15rem;
+  }
+
+  .right-container-p-1 {
+    line-height: normal;
+  }
+
+  .right-container-1,
+  .right-container-2,
+  .right-container-3 {
+    width: 18rem;
+    height: 8rem;
+  }
+}
+
+/* Media querry for gallery-container */
+@media screen and (max-width: 430px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .gallery-container img {
+    width: 17em;
+  }
+}
+
+/* Media querry for Footer */
+
+@media screen and (max-width: 430px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .desc-div {
+    gap: 40px;
+  }
+
+  footer img {
+    margin-bottom: 50px;
+  }
 }
