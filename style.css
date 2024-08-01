@@ -300,8 +300,7 @@ ul .right-side-nav {
   background-image: url("sectionBackground/image\ 13.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 55rem;
-  object-fit: cover;
+  height: auto;
 }
 
 .top-menu-trending {
@@ -374,9 +373,9 @@ ul .right-side-nav {
 
 .separator-card {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -713,10 +712,6 @@ footer img {
 /* Media querry for container-img-trending-products */
 
 @media screen and (max-width: 430px) {
-  .container-img-trending-products {
-    margin-top: 100px;
-  }
-
   .top-menu-trending {
     display: flex;
     justify-content: center;
@@ -737,7 +732,7 @@ footer img {
   }
 }
 
-/* Media querry for cards-container */
+/* Media querry for cards-container for big screens */
 
 @media screen and (max-width: 430px) {
   .separator-card {
@@ -757,11 +752,26 @@ footer img {
   }
 }
 
+/* Media querry for cards-container for small screens */
+@media screen and (max-width: 379px) {
+  .separator-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    width: 14rem;
+  }
+}
+
 /* Media querry for offer-container */
 
 @media screen and (max-width: 430px) {
   .offer-container {
-    margin-top: 35rem;
+    margin-top: 1rem;
     height: auto;
     padding-bottom: 1rem;
   }
