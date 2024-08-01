@@ -56,6 +56,10 @@ ul .right-side-nav {
   color: white;
 }
 
+.nav-for-phone {
+  display: none;
+}
+
 /* main-body CSS */
 
 .main-body {
@@ -590,4 +594,43 @@ footer img {
   background-color: #027a4831;
   border: transparent;
   border-radius: 12px;
+}
+
+/* Media querry for phone */
+
+@media screen and (max-width: 430px) {
+  .nav-for-phone {
+    display: block;
+  }
+
+  .nav-for-desktop {
+    display: none;
+  }
+
+  #m-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #drop-down {
+    background-color: rgba(29, 92, 165, 0.479);
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  #drop-down .left-side-nav {
+    color: white;
+    flex-direction: column;
+  }
+
+  #drop-down .right-side-nav {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 20px;
+  }
+
+  #drop-down .right-side-nav button {
+    color: white;
+  }
 }
